@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: frontend-deployment
-   namespace: frontend
+   namespace: default
 spec:
    replicas: 2
    selector:
