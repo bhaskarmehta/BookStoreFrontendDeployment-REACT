@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: frontend-deployment
+spec:
+   replicas: 2
+   selector:
+       matchLabels:
+           - name: frontend-deployment
+   template:
+      metadata:
+          name: frontend-deployment
+          labels: 
+            - name: frontend-deployment
+      spec: 
+         containers:
+              - name: frontendpod
+                image: bhasmeht/bookstoreimage  # {"$imagepolicy": "flux-system:frontend-podinfo"}
+                ports:
+                  - containerPort: 5173               
