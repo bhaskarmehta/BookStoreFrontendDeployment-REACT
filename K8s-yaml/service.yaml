@@ -5,7 +5,7 @@ metadata:
    namespace: default
 spec:
    selector:
-        - name: frontend-deployment  
+        name: frontend-deployment  
    ports:
       - protocol: "TCP"
         port: 5173

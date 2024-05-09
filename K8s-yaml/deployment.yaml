@@ -7,12 +7,12 @@ spec:
    replicas: 2
    selector:
        matchLabels:
-           - name: frontend-deployment
+           name: frontend-deployment
    template:
       metadata:
           name: frontend-deployment
           labels: 
-            - name: frontend-deployment
+            name: frontend-deployment
       spec: 
          containers:
               - name: frontendpod
