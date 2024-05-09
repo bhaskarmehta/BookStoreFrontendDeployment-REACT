@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1 
 metadata:
    name: frontend-svc 
-   namespace: default
+   namespace: frontend
 spec:
    selector:
         name: frontend-deployment  
