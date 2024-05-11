@@ -17,6 +17,6 @@ spec:
       containers:
         - name: frontendpod
           # image: bhasmeht/bookstoreimage:1.1.5 # {"$imagepolicy": "flux-system:frontend-podinfo"}
-          image: bhasmeht/bookstoreimage:1.1.12
+          image: bhasmeht/bookstoreimage:1.1.13
           ports:
             - containerPort: 5173
